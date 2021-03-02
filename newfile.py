@@ -10,7 +10,7 @@ def print(kata):
 if __name__ == '__main__':
 	os.system('clear')
 	userId = input("Masukkan ID Target: ")
-	response = requests.get('https://idomino.boxiangyx.com/web/shopIndex.do?userId='+userid)
+	response = requests.get('https://idomino.boxiangyx.com/web/shopIndex.do?userId='+userId)
 	console.log(response.json)
 	nama = requests.get('https://idomino.boxiangyx.com/web/shopIndex.do?userId='+userid+'&costKey=com.neptune.domino.sha256WithRSAEncryption =4&version=1.63')
 	nick = name.json()
